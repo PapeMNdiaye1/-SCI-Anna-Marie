@@ -15,9 +15,6 @@ body,
 html {
     width: 100%;
     height: 100%;
-    font-family: 'Roboto', sans-serif;
-
-
 }
 
 .hover_loader_container {
@@ -107,24 +104,6 @@ html {
 }
 
 
-.canvas {
-    background-color: red;
-}
-
-.canvas.a-canvas {
-    cursor: none;
-    background-color: red;
-}
-
-.canvas.a-canvas.a-mouse-cursor-hover {
-    cursor: none;
-}
-
-.canvas.a-canvas.a-mouse-cursor-hover:hover {
-    cursor: none;
-}
-
-
 .the_blach_hover {
     width: 100vw;
     height: 0vh;
@@ -137,7 +116,6 @@ html {
     transition-property: opacity, height;
 
 }
-
 
 
 .a-loader-title {
@@ -172,58 +150,6 @@ html {
 
 }
 
-.the_info {
-    position: absolute;
-    @include cent();
-    background-color: #f1f1f1;
-    width: 1.5em;
-    height: 1.5em;
-    border-radius: 50%;
-    bottom: 2%;
-    left: 2%;
-    z-index: 10;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    border: .5em solid #f1f1f1;
-    display: none;
-
-    ion-icon {
-        width: 100%;
-        height: 100%;
-        grid-column: 1;
-        grid-row: 1;
-        transition-duration: .1s;
-    }
-
-    ion-icon:nth-child(2) {
-        opacity: 0;
-    }
-
-
-    &:hover {
-        transform: scale(1.1);
-        cursor: pointer;
-    }
-}
-
-
-.the_description {
-    position: absolute;
-    bottom: -200%;
-    left: 2%;
-    z-index: 16;
-    width: 20em;
-    height: auto;
-    background-color: rgba(#f1f1f1, .7);
-    padding: 1em;
-    color: #000;
-    @include cent();
-    font-family: 'Roboto', sans-serif;
-    border-radius: .5em;
-    transition-duration: .1s;
-}
-
 
 
 .link_to_archviz {
@@ -236,7 +162,6 @@ html {
     z-index: 10;
     padding: .3em;
     color: #f1f1f1;
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     text-decoration: none;
     background-image: url('./Images/PNG/favicon.png');
@@ -280,7 +205,6 @@ html {
         grid-row-gap: .5em;
 
 
-        // background-color: salmon;
 
         .oneImage {
             margin: auto;
