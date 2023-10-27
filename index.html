@@ -124,21 +124,21 @@
                     console.log(Dote_Name);
 
                     //################################
-                    let the_img = document.querySelector(`#Scene-${Dote_Name.substring(5)}`)
+                    // let the_img = document.querySelector(`#Scene-${Dote_Name.substring(5)}`)
 
-                    async function refreshImage(url) {
-                        await fetch(url, { cache: 'reload', mode: 'no-cors' });
-                        document
-                            .querySelectorAll(`img[src='${url}']`)
-                            .forEach(the_img => (the_img.src = url));
-                    }
+                    // async function refreshImage(url) {
+                    //     await fetch(url, { cache: 'reload', mode: 'no-cors' });
+                    //     document
+                    //         .querySelectorAll(`img[src='${url}']`)
+                    //         .forEach(the_img => (the_img.src = url));
+                    // }
 
-                    if (the_img.condition) {
-                        console.log('Ok');
-                    } else {
-                        refreshImage(the_img.src)
-                        console.log('not Ok');
-                    }
+                    // if (the_img.condition) {
+                    //     console.log('Ok');
+                    // } else {
+                    //     refreshImage(the_img.src)
+                    //     console.log('not Ok');
+                    // }
                     //################################
                     // the_sky.setAttribute('rotation', `0 ${TheRotation} 0`)
 
